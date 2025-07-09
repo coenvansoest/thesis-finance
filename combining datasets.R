@@ -1,6 +1,6 @@
 total <- total %>% mutate(player_name = trimws(player_name))
 total<-total%>%
-  filter(!grepl('Dortmund', counter_team_name), !grepl('End', transfer_fee))
+  filter(!grepl('End', transfer_fee))
 transfers <- transfers %>% mutate(player_name = trimws(player_name))
 
 
